@@ -1,0 +1,31 @@
+{
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "icons": {
+     "128": "icons/wide-workplace-128.png",
+     "48": "icons/wide-workplace-48.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/",
+        "https://*.facebook.com/groups/*"
+      ],
+      "js": [
+        "lib/js/jquery-3.3.1.min.js",
+        "js/main.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "https://*.facebook.com/",
+    "https://*.facebook.com/groups/*"
+  ],
+  "web_accessible_resources": [
+    "css/*.css"
+  ],
+  "version": "${browserExtensionVersion}",
+  "manifest_version": 2
+}

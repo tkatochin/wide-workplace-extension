@@ -1,0 +1,8 @@
+{
+	"extName": {
+		"message": "${extName.en}"
+	},
+	"extDescription": {
+		"message": "${extDescription.en}"
+	}
+}

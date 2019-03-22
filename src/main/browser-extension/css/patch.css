@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+#headerArea + #rightCol:lang(ja):before {
+  content: "他…";
+}
+
+#headerArea + #rightCol:lang(en):before {
+  content: "Other:";
+}
+
+#headerArea + #rightCol:not(.pined):before {
+  cursor: pointer;
+  color: #555;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 9px 8px;
+  text-align: center;
+  margin: 3px;
+  margin-top: -53px;
+  margin-left: 20px;
+  position: absolute;
+}
+#headerArea + #rightCol:hover:before {
+  border-bottom: solid 4px #e9ebff;
+}
+
+#headerArea + #rightCol:focus,
+#headerArea + #rightCol:active,
+#headerArea + #rightCol.pined {
+  outline: none;
+  overflow: overlay !important;
+  background-color: white !important;
+}
+
+#headerArea + #rightCol:focus:before,
+#headerArea + #rightCol:active:before,
+#headerArea + #rightCol.pined:before {
+  display: none;
+}
+
+#headerArea + #rightCol:not(.pined) > div > div > div > div {
+  position: relative !important;
+}
+
+#headerArea + #rightCol:not(.pined) + div#contentArea {
+  width: 100% !important;
+}
+
+#headerArea + #rightCol:focus + div#contentArea,
+#headerArea + #rightCol:active + div#contentArea,
+#headerArea + #rightCol.pined + div#contentArea {
+  width: 502px !important;
+}
+
+#headerArea + #rightCol:not(.pined) {
+  height: 0px;
+  overflow: hidden;
+}
+
