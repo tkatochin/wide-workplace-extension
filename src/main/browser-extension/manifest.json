@@ -9,8 +9,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.facebook.com/",
-        "https://*.facebook.com/groups/*"
+        "https://*.facebook.com/*"
       ],
       "js": [
         "lib/js/jquery-3.3.1.min.js",
@@ -20,8 +19,7 @@
     }
   ],
   "permissions": [
-    "https://*.facebook.com/",
-    "https://*.facebook.com/groups/*"
+    "https://*.facebook.com/*"
   ],
   "web_accessible_resources": [
     "css/*.css"
