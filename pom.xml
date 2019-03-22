@@ -117,9 +117,6 @@
 							</descriptors>
 							<archiveBaseDirectory>target/browser-extension</archiveBaseDirectory>
 							<appendAssemblyId>false</appendAssemblyId>
-							<!--
-							<finalName>${project.artifactId}-${project.version-numonly}</finalName>
-							-->
 						</configuration>
 					</execution>
 				</executions>
