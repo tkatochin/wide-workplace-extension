@@ -16,17 +16,7 @@
       <includes>
         <include>**</include>
       </includes>
-      <lineEnding>unix</lineEnding>
       <filtered>false</filtered>
     </fileSet>
   </fileSets>
-  <!--
-  <dependencySets>
-    <dependencySet>
-      <unpack>false</unpack>
-      <scope>runtime</scope>
-       <outputDirectory>/target</outputDirectory>
-        </dependencySet>
-    </dependencySets>
-  -->
 </assembly>
