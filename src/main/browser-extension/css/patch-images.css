@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.userContentWrapper .mtm > div {
+  width: 100% !important;
+}
+.userContentWrapper .mtm a:nth-child(1) {
+  height: max-content !important;
+  overflow: hidden;
+  width: 100% !important;
+}
+
+.userContentWrapper .mtm a:nth-child(2) {
+  left: 50% !important;
+  top: 0 !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.userContentWrapper .mtm a:nth-child(3) {
+  left: 50% !important;
+  top: 50% !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.userContentWrapper .mtm a:nth-child(4) {
+  left: 75% !important;
+  top: 50% !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.userContentWrapper .mtm a:nth-child(5) {
+  left: 75% !important;
+  top: 75% !important;
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.userContentWrapper .uiScaledImageContainer {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.userContentWrapper .uiScaledImageContainer .scaledImageFitWidth {
+  height: auto;
+  min-height: initial;
+  width: 100% !important;
+}
+
+.userContentWrapper .uiScaledImageContainer img {
+  height: 100% !important;
+  min-height: 100% !important;
+  position: relative !important;
+  top: 0 !important;
+  width: 100% !important;
+}
