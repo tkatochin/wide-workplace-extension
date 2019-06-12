@@ -1,8 +1,10 @@
-.mtm > div {
+
+
+.mtm.scalable > div {
   width: auto !important;
   height: auto !important;
 }
-.mtm > div a[rel="theater"] img:not([src*="fallback=news_d_placeholder_publisher_square"])
+.mtm.scalable > div a[rel="theater"] img:not([src*="fallback=news_d_placeholder_publisher_square"])
 {
   width: auto !important;
   height: 50vh !important;
@@ -11,14 +13,14 @@
 
 }
 
-.mtm > div a[rel="theater"] video {
+.mtm.scalable > div a[rel="theater"] video {
   width: 0 !important;
   height: 0 !important;
   top: 0 !important;
   padding-right: 4px;
 }
 
-.mtm > div a[rel="theater"] {
+.mtm.scalable > div a[rel="theater"] {
   position: relative !important;
   width: auto !important;
   height: 50vh !important;
@@ -26,18 +28,21 @@
   left: initial !important;
   display: table-cell;
 }
-.mtm > div div[style*="height:"][style*="width:"] {
+
+/* pdf preview = _50zm */
+.mtm.scalable > div div[style*="height:"][style*="width:"] {
+  position: initial;
   width: auto !important;
   height: auto !important;
-  position: initial;
+  margin-left: 0 !important;
 }
-.mtm > div div[style*="height:"][style*="width:"] video ~ * img {
+.mtm.scalable > div div[style*="height:"][style*="width:"] video ~ * img {
   width: auto !important;
   height: 50vh !important;
   top: 0 !important;
   padding-right: 4px;
 }
-.mtm > div div[style*="height:"][style*="width:"] video ~ i {
+.mtm.scalable > div div[style*="height:"][style*="width:"] video ~ i {
     margin-top: calc((50vh - 72px) / 2);
     margin-left: calc((50vh - 72px) / 2);
     width: 72px !important;
@@ -45,27 +50,33 @@
     padding: calc(72px / 2);
 }
 
-.mtm > div {
+.mtm.scalable > div {
   /*
   display: flex;
   */
   overflow: scroll;
 }
 /* for event */
-.mtm > div:not([style]):not([class]) {
+.mtm.scalable > div:not([style]):not([class]) {
   display: initial !important;
   overflow: initial !important;
 }
 
 /* for location */
-.mtm a[ajaxify*="/places/map"] img {
+.mtm.scalable a[ajaxify*="/places/map"] img {
   width: 100% !important;
   height: auto !important;
 }
 
-.scaledImageFitHeight.img {
+.mtm.scalable > div .scaledImageFitHeight.img {
   width: auto !important;
   height: 50vh !important;
   top: initial !important;
   left: initial !important;
+}
+
+/* image of shared link */
+.mtm.scalable > div a[data-lynx-mode] img.scaledImageFitWidth.img {
+  height: 25vh !important;
+  width: auto !important;
 }
