@@ -80,3 +80,15 @@
   height: 25vh !important;
   width: auto !important;
 }
+
+
+#group_photoset table {
+  display: inline-block;
+}
+#group_photoset table tr {
+  display: inline-block;
+  margin-right: 5px;
+}
+#group_photoset table td.itemsPlutoniumRedesign {
+  display: inline-block;
+}
