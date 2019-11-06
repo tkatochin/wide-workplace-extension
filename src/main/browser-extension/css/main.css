@@ -29,19 +29,19 @@
 }
 
 /* pdf preview = _50zm */
-.mtm.scalable > div div[style*="height:"][style*="width:"] {
+.mtm.scalable > div div[style*="height:"][style*="width:"]:not(.fbStoryAttachmentImage) {
   position: initial;
   width: auto !important;
   height: auto !important;
   margin-left: 0 !important;
 }
-.mtm.scalable > div div[style*="height:"][style*="width:"] video ~ * img {
+.mtm.scalable > div div[style*="height:"][style*="width:"]:not(.fbStoryAttachmentImage) video ~ * img {
   width: auto !important;
   height: 50vh !important;
   top: 0 !important;
   padding-right: 4px;
 }
-.mtm.scalable > div div[style*="height:"][style*="width:"] video ~ i {
+.mtm.scalable > div div[style*="height:"][style*="width:"]:not(.fbStoryAttachmentImage) video ~ i {
     margin-top: calc((50vh - 72px) / 2);
     margin-left: calc((50vh - 72px) / 2);
     width: 72px !important;
