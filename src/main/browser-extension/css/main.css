@@ -10,7 +10,7 @@
   height: 50vh !important;
   top: 0 !important;
   padding-right: 4px;
-
+  position: initial;
 }
 
 .mtm.scalable > div a[rel="theater"] video {
@@ -23,7 +23,6 @@
 .mtm.scalable > div a[rel="theater"] {
   position: relative !important;
   width: auto !important;
-  height: 50vh !important;
   top: initial !important;
   left: initial !important;
   display: table-cell;
@@ -68,15 +67,31 @@
   height: auto !important;
 }
 
+/*
 .mtm.scalable > div .scaledImageFitHeight.img {
   width: auto !important;
   height: 50vh !important;
   top: initial !important;
   left: initial !important;
 }
+*/
 
 /* image of shared link */
+/*
 .mtm.scalable > div a[data-lynx-mode] img.scaledImageFitWidth.img {
   height: 25vh !important;
   width: auto !important;
+}
+*/
+
+
+#group_photoset table {
+  display: inline-block;
+}
+#group_photoset table tr {
+  display: inline-block;
+  margin-right: 5px;
+}
+#group_photoset table td.itemsPlutoniumRedesign {
+  display: inline-block;
 }
