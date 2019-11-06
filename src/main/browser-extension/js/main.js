@@ -24,7 +24,7 @@ $(window).on("load", function(){
     });
 
     document.querySelectorAll(".mtm:not(.scalable)").forEach(function(e) {
-      if (null == e.querySelector("._50zm")) {
+      if (null != e.querySelector("img.img")) {
         e.classList.add("scalable");
       }
     });
