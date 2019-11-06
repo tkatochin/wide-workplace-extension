@@ -14,10 +14,11 @@
 		<extDescription.en>Modifies the Workplace so that it can be widely viewed.</extDescription.en>
 		<extName.ja>Workplaceワイド劇場</extName.ja>
 		<extDescription.ja>Workplaceを広く表示できるように改造します。</extDescription.ja>
+		<github.global.server>github</github.global.server>
 	</properties>
 	<scm>
-		<connection>scm:git:https://gluegent.backlog.jp/git/WEED/wide-workplace.git</connection>
-		<developerConnection>scm:git:https://gluegent.backlog.jp/git/WEED/wide-workplace.git</developerConnection>
+		<connection>scm:git:https://github.com/tkatochin/wide-workplace-extension.git</connection>
+		<developerConnection>scm:git:https://github.com/tkatochin/wide-workplace-extension.git</developerConnection>
 	</scm>
 	<build>
 		<defaultGoal>clean generate-resources</defaultGoal>
