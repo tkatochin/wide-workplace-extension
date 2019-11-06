@@ -14,10 +14,11 @@
 		<extDescription.en>Modifies the Workplace so that it can be widely viewed.</extDescription.en>
 		<extName.ja>Workplaceワイド劇場</extName.ja>
 		<extDescription.ja>Workplaceを広く表示できるように改造します。</extDescription.ja>
+		<github.global.server>github</github.global.server>
 	</properties>
 	<scm>
-		<connection>scm:git:https://gluegent.backlog.jp/git/WEED/wide-workplace.git</connection>
-		<developerConnection>scm:git:https://gluegent.backlog.jp/git/WEED/wide-workplace.git</developerConnection>
+		<connection>scm:git:https://github.com/tkatochin/wide-workplace-extension.git</connection>
+		<developerConnection>scm:git:https://github.com/tkatochin/wide-workplace-extension.git</developerConnection>
 	</scm>
 	<build>
 		<defaultGoal>clean generate-resources</defaultGoal>
@@ -38,6 +39,10 @@
 				<plugin>
 					<artifactId>maven-assembly-plugin</artifactId>
 					<version>3.1.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.8.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -120,6 +125,12 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
