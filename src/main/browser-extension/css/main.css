@@ -50,9 +50,6 @@
 }
 
 .mtm.scalable > div {
-  /*
-  display: flex;
-  */
   overflow: scroll;
 }
 /* for event */
@@ -67,22 +64,22 @@
   height: auto !important;
 }
 
-/*
-.mtm.scalable > div .scaledImageFitHeight.img {
-  width: auto !important;
-  height: 50vh !important;
-  top: initial !important;
-  left: initial !important;
+/* auto multi-columns layout */
+[data-testid="post_message"] {
+  width: 476px;
 }
-*/
 
-/* image of shared link */
-/*
-.mtm.scalable > div a[data-lynx-mode] img.scaledImageFitWidth.img {
-  height: 25vh !important;
-  width: auto !important;
+.multiColumns[data-testid="post_message"] {
+  column-count: auto;
+  column-width: 60ex;
+  column-fill: auto;
+  width: auto;
 }
-*/
+
+[data-testid="post_message"] div,
+[data-testid="post_message"] p {
+  orphans: 8;
+}
 
 
 #group_photoset table {

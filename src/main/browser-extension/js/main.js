@@ -29,5 +29,23 @@ $(window).on("load", function(){
       }
     });
 
-  }, 100);
+    document.querySelectorAll('a.see_more_link .see_more_link_inner').forEach(function(e) {
+      if (!e.dataset.handlerAssigned) {
+        var postMessage = e.closest('[data-testid="post_message"]');
+        if (postMessage) {
+          var oldHeight = postMessage.offsetHeight;
+          e.addEventListener("click", function(ev) {
+            setTimeout(function() {
+              var newHeight = postMessage.offsetHeight;
+              if (newHeight >= oldHeight * 2) {
+                postMessage.classList.add("multiColumns");
+              }
+            }, 10);
+          });
+        }
+        e.dataset.handlerAssigned = "assigned";
+      }
+    });
+
+  }, 200);
 });
