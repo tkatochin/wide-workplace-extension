@@ -71,7 +71,7 @@
 
 .multiColumns[data-testid="post_message"] {
   column-count: auto;
-  column-width: 60ex;
+  column-width: 476px;
   column-fill: auto;
   width: auto;
 }
