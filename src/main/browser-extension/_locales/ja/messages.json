@@ -1,8 +1,8 @@
 {
 	"extName": {
-		"message": "${extName.ja}"
+		"message": "Workplaceワイド劇場"
 	},
 	"extDescription": {
-		"message": "${extDescription.ja}"
+		"message": "Workplaceを広く表示できるように改造します。"
 	}
 }

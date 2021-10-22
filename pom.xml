@@ -10,10 +10,6 @@
 		<browserExtensionFileName>${project.artifactId}</browserExtensionFileName>
 		<browserExtensionVersion>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</browserExtensionVersion>
 		<chromeWebstoreAccount>kato@gluegent.com</chromeWebstoreAccount>
-		<extName.en>Wide Worksplace</extName.en>
-		<extDescription.en>Modifies the Workplace so that it can be widely viewed.</extDescription.en>
-		<extName.ja>Workplaceワイド劇場</extName.ja>
-		<extDescription.ja>Workplaceを広く表示できるように改造します。</extDescription.ja>
 		<github.global.server>github</github.global.server>
 	</properties>
 	<scm>

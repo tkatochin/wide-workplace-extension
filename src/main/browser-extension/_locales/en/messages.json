@@ -1,8 +1,8 @@
 {
 	"extName": {
-		"message": "${extName.en}"
+		"message": "Wide Worksplace"
 	},
 	"extDescription": {
-		"message": "${extDescription.en}"
+		"message": "Modifies the Workplace so that it can be widely viewed."
 	}
 }
